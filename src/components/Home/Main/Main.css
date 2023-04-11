@@ -8,7 +8,8 @@
   .main__title {
     font-size: 40px;
     font-family: 'Montserrat Alternates';
-    font-weight: 700; }
+    font-weight: 700;
+    color: #fff; }
     .main__title span {
       color: #C2E54F;
       font-family: 'Montserrat Alternates';
@@ -18,7 +19,8 @@
     font-family: 'Montserrat Alternates';
     font-weight: 700;
     margin-top: 20px;
-    text-align: center; }
+    text-align: center;
+    color: #fff; }
     .main__subtitle span {
       color: #C2E54F;
       font-family: 'Montserrat Alternates';
