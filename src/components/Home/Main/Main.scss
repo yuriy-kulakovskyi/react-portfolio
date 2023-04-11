@@ -8,32 +8,50 @@
 
   // title styles
   &__title {
-    font-size: 40px;
+    font-size: 35px;
     // Montserrat Alternates font-family
     font-family: 'Montserrat Alternates';
     font-weight: 700;
     color: #fff;
+    text-shadow: $shadow;
 
     span {
       color: $green;
       font-family: 'Montserrat Alternates';
       font-weight: 900;
     }
+
+    @media screen and (min-width: 540px) {
+      font-size: 45px;
+    }
+
+    @media (min-width: 991px) {
+      font-size: 55px;
+    }
   }
 
   // subtitle styles
   &__subtitle {
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Montserrat Alternates';
     font-weight: 700;
     margin-top: 20px;
     text-align: center;
     color: #fff;
+    text-shadow: $shadow;
 
     span {
       color: $green;
       font-family: 'Montserrat Alternates';
       font-weight: 900;
+    }
+
+    @media screen and (min-width: 540px) {
+      font-size: 30px;
+    }
+
+    @media (min-width: 991px) {
+      font-size: 40px;
     }
   }
 }

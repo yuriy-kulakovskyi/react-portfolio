@@ -26,7 +26,8 @@
           font-size: 20px;
           transition: all .3s ease-in-out;
           color: #fff;
-          font-weight: 800; }
+          font-weight: 800;
+          text-shadow: 0 0 5px #C2E54F; }
           .header__container__nav__links__link:hover {
             color: #212529; } }
     @media screen and (min-width: 991px) {

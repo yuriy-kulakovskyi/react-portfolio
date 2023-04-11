@@ -10,9 +10,9 @@ const Main = () => {
       <p className="main__subtitle">
         I am a <br /> <Typed
           strings={[
-            'Web-developer.',
-            'Web-designer.',
-            'Creator IT Academy student.']}
+            'Web-developer',
+            'Web-designer',
+            'Creator IT Academy student']}
           typeSpeed={100}
           backSpeed={90}
           loop >
