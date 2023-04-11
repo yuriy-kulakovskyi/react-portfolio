@@ -1,0 +1,104 @@
+@import "../mixins";
+@import "../variables";
+
+.header {
+  width: 100%;
+
+  &__container {
+    width: 100%;
+    @include SpaceBetween();
+    align-items: center;
+    padding: 1rem 2rem;
+
+    &__logo {
+      font-size: 25px;
+      font-weight: 900;
+      font-family: "Montserrat Alternates";
+      letter-spacing: 2px;
+      color: #333;
+
+      span {
+        color: #fff;
+        font-family: "Montserrat Alternates";
+      }
+    }
+
+    &__nav {
+      @media screen and (min-width: 991px) {
+        &__links {
+          display: flex;
+          gap: 50px;
+  
+          &__link {
+            font-family: "Montserrat Alternates";
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: 20px;
+            transition: all .3s ease-in-out;
+            color: #fff;
+            font-weight: 800;
+  
+            &:hover {
+              color: $black;
+            }
+          }
+        }
+      }
+
+      &__cross {
+        @media screen and (min-width: 991px) {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 991px) {
+        width: 300px; height: 100%;
+        background-color: #fff;
+        position: fixed;
+        top: 0; right: 0;
+        @include SpaceBetween();
+        align-items: flex-start;
+        padding: 40px 30px 0 40px;
+        transition: all .3s ease-in-out;
+
+        &__links {
+          display: flex;
+          gap: 30px;
+          flex-direction: column;
+
+          &__link {
+            font-family: "Montserrat Alternates";
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: 20px;
+            transition: all .3s ease-in-out;
+            color: $black;
+
+            &:hover {
+              color: $green;
+            }
+          }
+
+          .active {
+            color: $green;
+          }
+        }
+
+        &__cross {
+          background-color: transparent;
+          border: none;
+          font-size: 30px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &__toggle {
+      cursor: pointer;
+
+      @media screen and (min-width: 991px) {
+        display: none;
+      }
+    }
+  }
+}

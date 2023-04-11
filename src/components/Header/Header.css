@@ -1,0 +1,74 @@
+.header {
+  width: 100%; }
+  .header__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem; }
+    .header__container__logo {
+      font-size: 25px;
+      font-weight: 900;
+      font-family: "Montserrat Alternates";
+      letter-spacing: 2px;
+      color: #333; }
+      .header__container__logo span {
+        color: #fff;
+        font-family: "Montserrat Alternates"; }
+    @media screen and (min-width: 991px) {
+      .header__container__nav__links {
+        display: flex;
+        gap: 50px; }
+        .header__container__nav__links__link {
+          font-family: "Montserrat Alternates";
+          text-decoration: none;
+          text-transform: capitalize;
+          font-size: 20px;
+          transition: all .3s ease-in-out;
+          color: #fff;
+          font-weight: 800; }
+          .header__container__nav__links__link:hover {
+            color: #212529; } }
+    @media screen and (min-width: 991px) {
+      .header__container__nav__cross {
+        display: none; } }
+    @media screen and (max-width: 991px) {
+      .header__container__nav {
+        width: 300px;
+        height: 100%;
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 40px 30px 0 40px;
+        transition: all .3s ease-in-out; }
+        .header__container__nav__links {
+          display: flex;
+          gap: 30px;
+          flex-direction: column; }
+          .header__container__nav__links__link {
+            font-family: "Montserrat Alternates";
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: 20px;
+            transition: all .3s ease-in-out;
+            color: #212529; }
+            .header__container__nav__links__link:hover {
+              color: #C2E54F; }
+          .header__container__nav__links .active {
+            color: #C2E54F; }
+        .header__container__nav__cross {
+          background-color: transparent;
+          border: none;
+          font-size: 30px;
+          cursor: pointer; } }
+    .header__container__toggle {
+      cursor: pointer; }
+      @media screen and (min-width: 991px) {
+        .header__container__toggle {
+          display: none; } }
+
+/*# sourceMappingURL=Header.css.map */

@@ -1,0 +1,24 @@
+// font-family Montserrat Alternates import
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700&display=swap');
+
+* {
+  padding: 0; margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+
+  @media (min-width: 540px) {
+    max-width: 540px;
+  }
+
+  @media (min-width: 991px) {
+    max-width: 991px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
