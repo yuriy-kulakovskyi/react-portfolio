@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../Header/Header';
+import Footer from './Footer/Footer';
 import './Home.css';
 import Main from './Main/Main';
 
@@ -46,6 +47,9 @@ const Home = () => {
 
         {/* Main */}
         <Main />
+
+        {/* Footer */}
+        <Footer />
       </div>
     </section>
   );

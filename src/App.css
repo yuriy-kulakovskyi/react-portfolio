@@ -5,8 +5,13 @@
   box-sizing: border-box;
   font-family: sans-serif; }
 
+::selection {
+  background-color: #C2E54F;
+  color: #fff; }
+
 .container {
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 1rem 2rem; }
   @media (min-width: 540px) {
     .container {
       max-width: 540px; } }

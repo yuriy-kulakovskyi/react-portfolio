@@ -1,0 +1,19 @@
+.footer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px; }
+  .footer__link {
+    color: #fff;
+    transition: all .3s ease-in-out; }
+    .footer__link svg {
+      width: 30px;
+      height: 30px;
+      stroke-width: 2px; }
+    .footer__link:hover {
+      color: #C2E54F; }
+
+/*# sourceMappingURL=Footer.css.map */

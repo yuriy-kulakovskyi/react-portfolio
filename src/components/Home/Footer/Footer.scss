@@ -1,0 +1,23 @@
+@import "../../variables.scss";
+@import "../../mixins.scss";
+
+.footer {
+  position: relative;
+  width: 100%; height: 100%;
+  @include Center();
+  gap: 50px;
+
+  &__link {
+    color: #fff;
+    transition: all .3s ease-in-out;
+
+    svg {
+      width: 30px; height: 30px;
+      stroke-width: 2px;
+    }
+
+    &:hover {
+      color: $green;
+    }
+  }
+}
