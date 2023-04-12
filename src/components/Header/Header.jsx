@@ -30,7 +30,7 @@ const Header = ({nav}) => {
 
         {/* toggle menu button with className header__container__toggle */}
         <div className="header__container__toggle" onClick={() => setOpened(true)}>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><g fill="none" fill-rule="evenodd" stroke="#fff"><rect width="8" height="8" x="2.5" y="2.5" rx="2"></rect><rect width="8" height="8" x="13.5" y="2.5" rx="2"></rect><rect width="8" height="8" x="2.5" y="13.5" rx="2"></rect><rect width="8" height="8" x="13.5" y="13.5" rx="2"></rect></g></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><g fill="none" fillRule="evenodd" stroke="#fff"><rect width="8" height="8" x="2.5" y="2.5" rx="2"></rect><rect width="8" height="8" x="13.5" y="2.5" rx="2"></rect><rect width="8" height="8" x="2.5" y="13.5" rx="2"></rect><rect width="8" height="8" x="13.5" y="13.5" rx="2"></rect></g></svg>
         </div>
       </div>
     </header>
