@@ -77,6 +77,20 @@
         object-fit: fill;
         border-radius: 10px;
       }
+
+      @media screen and (max-width: 472px) {
+        &__column__name {
+          font-size: 12px;
+        }
+
+        &__column__description {
+          font-size: 10px;
+        }
+
+        &__img {
+          min-width: 120px!important; height: 80px!important;
+        }
+      }
     }
   }
 }

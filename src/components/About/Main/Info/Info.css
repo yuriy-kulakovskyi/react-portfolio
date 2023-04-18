@@ -27,5 +27,8 @@
     font-family: "Montserrat Alternates";
     font-size: 20px;
     text-align: center; }
+    @media screen and (max-width: 600px) {
+      .info__paragraph {
+        font-size: 13px; } }
 
 /*# sourceMappingURL=Info.css.map */

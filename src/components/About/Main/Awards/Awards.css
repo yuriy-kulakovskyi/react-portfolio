@@ -61,5 +61,13 @@
         height: 120px;
         object-fit: fill;
         border-radius: 10px; }
+      @media screen and (max-width: 472px) {
+        .awards__list__item__column__name {
+          font-size: 12px; }
+        .awards__list__item__column__description {
+          font-size: 10px; }
+        .awards__list__item__img {
+          min-width: 120px !important;
+          height: 80px !important; } }
 
 /*# sourceMappingURL=Awards.css.map */
