@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
+import axios from "axios";
 import "./Info.css";
 
 const Info = () => {
+  // info state
   const [info, setInfo] = useState([]);
   
-  // get info from https://portfolio-server-u50n.onrender.com/info by fetch()
-  fetch("https://portfolio-server-u50n.onrender.com/info")
-    .then(res => res.json())
-    .then(data => setInfo(data[0]));
-  
+  // get info from https://portfolio-server-u50n.onrender.com/info by axios
+  axios.get(process.env.INFO || "http://localhost:4000/info")
+    .then(res => setInfo(res.data[0]));
+
   return (
     <div className='info'>
       <div className="info__image-box">
