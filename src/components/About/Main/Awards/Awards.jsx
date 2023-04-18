@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import "./Awards.css";
 
 const Awards = () => {
   // certificates state
   const [certificates, setCertificates] = useState([]);
 
-  // get them from https://portfolio-server-u50n.onrender.com/certificates by axios
-  axios.get("https://portfolio-server-u50n.onrender.com/certificates")
-    .then(res => setCertificates(res.data));
+  // get them from https://portfolio-server-u50n.onrender.com/certificates by fetch()
+  fetch("https://portfolio-server-u50n.onrender.com/certificates")
+    .then(res => res.json())
+    .then(data => setCertificates(data));
 
   return (
     <div className='awards'>
