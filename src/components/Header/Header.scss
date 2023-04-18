@@ -1,14 +1,53 @@
 @import "../mixins";
 @import "../variables";
 
+section:not(.home) .header {
+  @media screen and (min-width: 991px) {
+    &__container__nav__links__link {
+      text-shadow: none;
+      color: $black;
+    }
+
+    &__container__nav__links__link.active,
+    &__container__nav__links__link:hover {
+      color: $green;
+      text-shadow: 0 0 2px $green;
+    }
+  }
+
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0px rgba(0, 0, 0, .1);
+
+  &__container__logo {
+    text-shadow: 0 0 2px $green;
+
+    span {
+      color: $green;
+    }
+  }
+
+  &__container__toggle {
+    svg {
+      g {
+        stroke: $green;
+        stroke-width: 2px;
+      }
+    }
+  }
+}
+
 .header {
   width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0; left: 0;
+  padding: 1rem 2rem;
 
   &__container {
     width: 100%;
     @include SpaceBetween();
     align-items: center;
-    padding: 0;
+    padding: 0 1rem;
 
     &__logo {
       font-size: 25px;
@@ -65,6 +104,9 @@
         align-items: flex-start;
         padding: 40px 30px 0 40px;
         transition: all .3s ease-in-out;
+        box-shadow: $shadow;
+        overflow: scroll;
+        z-index: 1;
 
         &__links {
           display: flex;
@@ -79,14 +121,19 @@
             transition: all .3s ease-in-out;
             color: $black;
 
+            &:last-child {
+              margin-bottom: 30px;
+            }
+
             &:hover {
               color: $green;
+              text-shadow: 0 0 2px $green;
             }
           }
 
           .active {
             color: $green;
-            text-shadow: $shadow;
+            text-shadow: 0 0 2px $green;
           }
         }
 

@@ -1,0 +1,40 @@
+@import "../../../mixins.scss";
+@import "../../../variables.scss";
+
+.info {
+  width: 100%;
+  @include Center();
+  gap: 20px;
+  flex-direction: column;
+  padding: 1rem 0;
+
+  @media screen and (min-width: 991px) {
+    flex-direction: row;
+
+    &__image-box {
+      min-width: 205px;
+    }
+
+    &__paragraph {
+      text-align: left!important;
+      margin-left: 10px;
+    }
+  }
+
+  &__image-box {
+    width: 210px; height: 220px;
+    box-shadow: $shadow;
+    border-radius: 100%;
+
+    img {
+      width: 100%; height: 100%;
+      border-radius: 100%;
+    }
+  }
+
+  &__paragraph {
+    font-family: "Montserrat Alternates";
+    font-size: 20px;
+    text-align: center;
+  }
+}

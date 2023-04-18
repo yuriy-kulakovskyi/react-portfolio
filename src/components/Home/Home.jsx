@@ -3,6 +3,7 @@ import Header from '../Header/Header';
 import Footer from './Footer/Footer';
 import './Home.css';
 import Main from './Main/Main';
+import ParticlesComponent from '../../Particles/ParticlesComponent';
 
 const nav = [
   {
@@ -34,12 +35,15 @@ const nav = [
     "content": "contact",
     "active": "disactive"
   },
-]
+];
 
 const Home = () => {
   return (
     // section with className home
     <section className="home">
+      {/* Particles */}
+      <ParticlesComponent />
+
       {/* div with className home__container */}
       <div className="home__container container">
         {/* Header */}
@@ -47,10 +51,10 @@ const Home = () => {
 
         {/* Main */}
         <Main />
-
-        {/* Footer */}
-        <Footer />
       </div>
+
+      {/* Footer */}
+      <Footer />
     </section>
   );
 }

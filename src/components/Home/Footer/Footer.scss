@@ -2,10 +2,12 @@
 @import "../../mixins.scss";
 
 .footer {
-  position: relative;
-  width: 100%; height: 100%;
+  position: absolute;
+  width: 100%; height: 10%;
   @include Center();
   gap: 50px;
+  z-index: 1;
+  bottom: 10px;
 
   &__link {
     color: #fff;

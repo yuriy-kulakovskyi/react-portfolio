@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "./Header.css";
 import Link from './Link/Link';
 
-const Header = ({nav}) => {
+const Header = ({ nav }) => {
   const [opened, setOpened] = useState(false);
 
   return (
@@ -20,7 +20,6 @@ const Header = ({nav}) => {
               return <Link
                 key={item.id}
                 content={item.content}
-                id={item.id}
                 active={item.active}
               />
             })}

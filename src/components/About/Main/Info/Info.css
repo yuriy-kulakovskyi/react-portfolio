@@ -1,0 +1,31 @@
+.info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  padding: 1rem 0; }
+  @media screen and (min-width: 991px) {
+    .info {
+      flex-direction: row; }
+      .info__image-box {
+        min-width: 205px; }
+      .info__paragraph {
+        text-align: left !important;
+        margin-left: 10px; } }
+  .info__image-box {
+    width: 210px;
+    height: 220px;
+    box-shadow: 0 0 5px #C2E54F;
+    border-radius: 100%; }
+    .info__image-box img {
+      width: 100%;
+      height: 100%;
+      border-radius: 100%; }
+  .info__paragraph {
+    font-family: "Montserrat Alternates";
+    font-size: 20px;
+    text-align: center; }
+
+/*# sourceMappingURL=Info.css.map */

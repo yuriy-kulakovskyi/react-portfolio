@@ -1,15 +1,20 @@
 import './App.css';
 import Home from './components/Home/Home';
-import ParticlesComponent from './Particles/ParticlesComponent';
+import About from './components/About/About';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      {/* Particles */}
-      <ParticlesComponent />
-      
-      {/* Home */}
-      <Home />
+      <BrowserRouter>
+        <Routes>
+          {/* Home */}
+          <Route path="/" element={<Home />}></Route>
+
+          {/* About */}
+          <Route path="about" element={<About />}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

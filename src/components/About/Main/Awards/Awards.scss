@@ -1,0 +1,82 @@
+@import "../../../variables.scss";
+@import "../../../mixins.scss";
+
+.awards {
+  width: 100%;
+  padding: 2rem 0;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+
+    &__underline {
+      width: 100px; height: 2px;
+      background-color: $green;
+    }
+  }
+
+  &__title__row {
+    font-family: "Montserrat Alternates";
+    font-weight: 600;
+
+    span {
+      font-family: "Montserrat Alternates";
+      font-weight: 600;
+      color: $green;
+      text-shadow: 0 0 2px $green;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    @include Grid();
+    list-style-type: none;
+    gap: 50px;
+    padding: 1rem 0;
+
+    &__item {
+      width: 100%;
+      padding: 1rem;
+      @include Center();
+      justify-content: flex-start;
+      box-shadow: 0 1px 2px 0px rgba(0, 0, 0, .3);
+      position: relative;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        box-shadow: 0 8px 50px -5px rgba(0, 0, 0, .1);
+        top: -2px;
+      }
+
+      &__column {
+        padding: 0 1.5rem;
+        @include Start();
+        flex-direction: column;
+        gap: 15px;
+
+        &__name {
+          font-family: "Montserrat Alternates";
+          font-weight: 600;
+          font-size: 18px;
+          color: $green;
+          text-align: left;
+        }
+
+        &__description {
+          font-family: "Montserrat Alternates";
+          font-weight: 700;
+          font-size: 14px;
+          color: $black;
+        }
+      }
+
+      &__img {
+        min-width: 175px; height: 120px;
+        object-fit: fill;
+        border-radius: 10px;
+      }
+    }
+  }
+}

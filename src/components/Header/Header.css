@@ -1,11 +1,34 @@
+section:not(.home) .header {
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.1); }
+  @media screen and (min-width: 991px) {
+    section:not(.home) .header__container__nav__links__link {
+      text-shadow: none;
+      color: #212529; }
+    section:not(.home) .header__container__nav__links__link.active, section:not(.home) .header__container__nav__links__link:hover {
+      color: #C2E54F;
+      text-shadow: 0 0 2px #C2E54F; } }
+  section:not(.home) .header__container__logo {
+    text-shadow: 0 0 2px #C2E54F; }
+    section:not(.home) .header__container__logo span {
+      color: #C2E54F; }
+  section:not(.home) .header__container__toggle svg g {
+    stroke: #C2E54F;
+    stroke-width: 2px; }
+
 .header {
-  width: 100%; }
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  padding: 1rem 2rem; }
   .header__container {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0; }
+    padding: 0 1rem; }
     .header__container__logo {
       font-size: 25px;
       font-weight: 900;
@@ -47,7 +70,10 @@
         justify-content: space-between;
         align-items: flex-start;
         padding: 40px 30px 0 40px;
-        transition: all .3s ease-in-out; }
+        transition: all .3s ease-in-out;
+        box-shadow: 0 0 5px #C2E54F;
+        overflow: scroll;
+        z-index: 1; }
         .header__container__nav__links {
           display: flex;
           gap: 30px;
@@ -59,11 +85,14 @@
             font-size: 20px;
             transition: all .3s ease-in-out;
             color: #212529; }
+            .header__container__nav__links__link:last-child {
+              margin-bottom: 30px; }
             .header__container__nav__links__link:hover {
-              color: #C2E54F; }
+              color: #C2E54F;
+              text-shadow: 0 0 2px #C2E54F; }
           .header__container__nav__links .active {
             color: #C2E54F;
-            text-shadow: 0 0 5px #C2E54F; }
+            text-shadow: 0 0 2px #C2E54F; }
         .header__container__nav__cross {
           background-color: transparent;
           border: none;
