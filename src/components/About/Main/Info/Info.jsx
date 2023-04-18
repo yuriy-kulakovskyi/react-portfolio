@@ -7,7 +7,7 @@ const Info = () => {
   const [info, setInfo] = useState([]);
   
   // get info from https://portfolio-server-u50n.onrender.com/info by axios
-  axios.get(process.env.INFO || "http://localhost:4000/info")
+  axios.get("https://portfolio-server-u50n.onrender.com/info")
     .then(res => setInfo(res.data[0]));
 
   return (

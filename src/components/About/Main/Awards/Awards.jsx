@@ -7,7 +7,7 @@ const Awards = () => {
   const [certificates, setCertificates] = useState([]);
 
   // get them from https://portfolio-server-u50n.onrender.com/certificates by axios
-  axios.get(process.env.CERTIFICATES || "http://localhost:4000/certificates")
+  axios.get("https://portfolio-server-u50n.onrender.com/certificates")
     .then(res => setCertificates(res.data));
 
   return (
