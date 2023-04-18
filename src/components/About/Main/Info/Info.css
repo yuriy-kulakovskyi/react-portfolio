@@ -10,13 +10,14 @@
     .info {
       flex-direction: row; }
       .info__image-box {
-        min-width: 205px; }
+        min-width: 170px; }
       .info__paragraph {
         text-align: left !important;
         margin-left: 10px; } }
   .info__image-box {
-    width: 210px;
-    height: 220px;
+    width: 170px;
+    height: 200px;
+    object-fit: contain;
     box-shadow: 0 0 5px #C2E54F;
     border-radius: 100%; }
     .info__image-box img {

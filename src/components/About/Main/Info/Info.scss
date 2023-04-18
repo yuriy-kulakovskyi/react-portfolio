@@ -12,7 +12,7 @@
     flex-direction: row;
 
     &__image-box {
-      min-width: 205px;
+      min-width: 170px;
     }
 
     &__paragraph {
@@ -22,7 +22,8 @@
   }
 
   &__image-box {
-    width: 210px; height: 220px;
+    width: 170px; height: 200px;
+    object-fit: contain;
     box-shadow: $shadow;
     border-radius: 100%;
 
