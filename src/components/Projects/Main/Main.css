@@ -33,6 +33,9 @@
       .main-projects__dropdown__item:hover {
         background-color: #C2E54F;
         color: #fff; }
+  .main-projects__loading {
+    font-family: "Montserrat Alternates";
+    font-size: 25px; }
   .main-projects__repos {
     width: 100%;
     display: grid;

@@ -1,20 +1,3 @@
-@mixin SpaceBetween {
-  display: flex;
-  justify-content: space-between;
-}
-
-@mixin Start {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-@mixin Center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 @mixin flex ($justify, $align, $direction) {
   display: flex;
   justify-content: $justify;

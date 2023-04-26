@@ -3,20 +3,17 @@
 
 .main-projects {
   width: 100%;
-  @include Center();
-  flex-direction: column;
+  @include flex(center, center, column);
 
   .bar {
     width: 100%;
-    @include Center();
-    flex-direction: column;
+    @include flex(center, center, column);
     margin-bottom: 2rem;
   }
 
   &__dropdown {
     width: 100%;
-    @include Center();
-    flex-direction: column;
+    @include flex(center, center, column);
     list-style-type: none;
     box-shadow: $shadow;
     border-radius: 15px;
@@ -37,6 +34,11 @@
         color: #fff;
       }
     }
+  }
+
+  &__loading {
+    font-family: "Montserrat Alternates";
+    font-size: 25px;
   }
 
   &__repos {

@@ -15,7 +15,7 @@
     &__item {
       width: 100%;
       padding: 1rem;
-      @include Center();
+      @include flex(center, center, row);
       justify-content: flex-start;
       box-shadow: 0 1px 2px 0px rgba(0, 0, 0, .3);
       position: relative;
@@ -28,8 +28,7 @@
 
       &__column {
         padding: 0 1.5rem;
-        @include Start();
-        flex-direction: column;
+        @include flex(flex-start, flex-start, column);
         gap: 15px;
 
         &__name {

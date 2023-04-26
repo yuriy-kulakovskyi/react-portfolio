@@ -3,8 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
   flex-direction: column;
+  gap: 20px;
   padding: 1rem 0; }
   @media screen and (min-width: 991px) {
     .info {

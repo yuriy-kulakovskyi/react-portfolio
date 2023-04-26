@@ -1,10 +1,11 @@
 import React from 'react';
 import "./Search.css";
 
-const Search = ({ setFilterText, setIsOpened, filterText }) => {
+const Search = ({ setFilterText, setIsOpened, filterText, setIsPaginationOpened }) => {
   const onChangeHandler = e => {
     setFilterText(e.target.value);
     setIsOpened(true);
+    filterText !== "" ? setIsPaginationOpened(true) : setIsPaginationOpened(false);
   }
 
   return (

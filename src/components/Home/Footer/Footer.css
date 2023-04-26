@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   gap: 50px;
   z-index: 1;
   bottom: 10px; }

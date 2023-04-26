@@ -55,13 +55,14 @@ const Main = () => {
 
   const [isOpened, setIsOpened] = useState(false);
 
-  // Get number of pages based on filtered repos
-  const numPages = Math.ceil(repos.length / reposPerPage);
+  // open/close pagination state
+  const [isPaginationOpened, setIsPaginationOpened] = useState(true);
 
   // Click on the dropdown item
   const itemClickHandler = e => {
     setFilterText(e.target.textContent);
     setIsOpened(!isOpened);
+    setIsPaginationOpened(false);
   }
 
   // Pagination handler
@@ -81,6 +82,7 @@ const Main = () => {
           setFilterText={setFilterText}
           setIsOpened={setIsOpened}
           filterText={filterText}
+          setIsPaginationOpened={setIsPaginationOpened}
         />
 
         {/* Dropdown menu */}
@@ -103,7 +105,7 @@ const Main = () => {
 
       {/* Repositories */}
       {loading ?
-        <p>Loading...</p>
+        <p className='main-projects__loading'>Loading...</p>
         :
 
         <ul className='main-projects__repos'>
@@ -126,11 +128,15 @@ const Main = () => {
       }
 
       {/* Pagination */}
-      <Pagination 
-        page={currentPage}
-        count={numPages}
-        onChange={pageChangeHandler}
-      />
+      {isPaginationOpened ? 
+        <Pagination 
+          page={currentPage}
+          count={Math.ceil(repos.length / reposPerPage)}
+          onChange={pageChangeHandler}
+        />
+        : null
+      }
+      
     </main>
   );
 }

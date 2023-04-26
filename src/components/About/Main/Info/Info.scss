@@ -3,9 +3,8 @@
 
 .info {
   width: 100%;
-  @include Center();
+  @include flex(center, center, column);
   gap: 20px;
-  flex-direction: column;
   padding: 1rem 0;
 
   @media screen and (min-width: 991px) {
