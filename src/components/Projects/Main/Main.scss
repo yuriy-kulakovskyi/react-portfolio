@@ -1,0 +1,63 @@
+@import "../../mixins.scss";
+@import "../../variables.scss";
+
+.main-projects {
+  width: 100%;
+  @include Center();
+  flex-direction: column;
+
+  .bar {
+    width: 100%;
+    @include Center();
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  &__dropdown {
+    width: 100%;
+    @include Center();
+    flex-direction: column;
+    list-style-type: none;
+    box-shadow: $shadow;
+    border-radius: 15px;
+
+    &__item {
+      width: 100%;
+      padding: 10px 20px;
+      font-family: "Montserrat Alternates";
+      font-weight: 700;
+      font-size: 20px;
+      color: $green;
+      cursor: pointer;
+      border-radius: 15px;
+      border-bottom: 1px solid $green;
+
+      &:hover {
+        background-color: $green;
+        color: #fff;
+      }
+    }
+  }
+
+  &__repos {
+    width: 100%;
+    @include Grid();
+    list-style-type: none;
+  }
+}
+
+
+// Material UI Pagination styles
+
+.MuiPagination-root {
+  margin-top: 40px;
+
+  .MuiButtonBase-root {
+    font-family: "Montserrat Alternates";
+  }
+}
+
+.css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected  {
+  background-color: $green!important;
+  color: #fff;
+}

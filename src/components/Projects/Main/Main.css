@@ -1,0 +1,51 @@
+.main-projects {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .main-projects .bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem; }
+  .main-projects__dropdown {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    box-shadow: 0 0 5px #C2E54F;
+    border-radius: 15px; }
+    .main-projects__dropdown__item {
+      width: 100%;
+      padding: 10px 20px;
+      font-family: "Montserrat Alternates";
+      font-weight: 700;
+      font-size: 20px;
+      color: #C2E54F;
+      cursor: pointer;
+      border-radius: 15px;
+      border-bottom: 1px solid #C2E54F; }
+      .main-projects__dropdown__item:hover {
+        background-color: #C2E54F;
+        color: #fff; }
+  .main-projects__repos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    list-style-type: none; }
+
+.MuiPagination-root {
+  margin-top: 40px; }
+  .MuiPagination-root .MuiButtonBase-root {
+    font-family: "Montserrat Alternates"; }
+
+.css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+  background-color: #C2E54F !important;
+  color: #fff; }
+
+/*# sourceMappingURL=Main.css.map */

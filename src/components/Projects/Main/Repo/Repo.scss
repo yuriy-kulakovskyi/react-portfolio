@@ -1,0 +1,120 @@
+@import "../../../variables.scss";
+@import "../../../mixins.scss";
+
+.repo {
+  &:last-child {
+    border-bottom: 1px solid rgb(216, 222, 228);
+  }
+
+  width: 100%;
+  border-top: 1px solid rgb(216, 222, 228);
+  padding: 1rem 0;
+
+  &__left {
+    &__name {
+      font-family: "Montserrat Alternates";
+      text-decoration: none;
+      color: $green;
+      font-weight: 800;
+      font-size: 24px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &__description {
+      font-family: "Montserrat Alternates";
+      color: $black;
+      font-size: 17px;
+    }
+
+    &__topics {
+      list-style-type: none;
+      @include flex (flex-start, flex-start, row);
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 10px 0 ;
+
+      &__topic {
+        font-family: "Montserrat Alternates";
+        font-size: 14px;
+        color: #0969da;
+        background-color: #ddf4ff;
+        padding: 5px 10px;
+        border-radius: 10px;
+        cursor: pointer;
+
+        // Hover like on GitHub topic
+        &:hover {
+          background-color: #0969da;
+          color: #fff
+        }
+      }
+    }
+
+    &__row {
+      &__lang {
+        @include flex (flex-start, center, row);
+        gap: 15px;
+
+        &__color {
+          width: 20px; height: 20px;
+          border-radius: 50%;
+        }
+
+        &__name {
+          font-family: "Montserrat Alternates";
+          font-size: 18px;
+          color: $black;
+          font-weight: 800;
+        }
+
+        &__stars {
+          @include flex (center, center, row);
+          gap: 5px;
+
+          &__count {
+            font-family: "Montserrat Alternates";
+            font-size: 18px;
+            color: $black;
+          }
+
+          svg {
+            cursor: pointer;
+
+            &:hover {
+              fill: #0969da;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__right {
+    @include flex(flex-end, center, row);
+
+    &__homepage {
+      background-color: $green;
+      color: #fff;
+      box-shadow: $shadow;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-family: "Montserrat Alternates";
+      font-weight: 800;
+      transition: all .3s ease-in-out;
+      border: 1px solid $green;
+
+      &:hover {
+        background-color: #fff;
+        color: $green;
+      }
+    }
+  }
+
+  &__left, &__right {
+    width: 100%;
+  }
+}

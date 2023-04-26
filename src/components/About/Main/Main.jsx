@@ -1,17 +1,14 @@
 import React from 'react';
 import Info from './Info/Info';
 import Awards from './Awards/Awards';
+import Title from '../../Title/Title';
 import "./Main.css";
 
 const Main = () => {
   return (
     <main className="main-about">
-      <h2 className="main-about__title">
-        <div className="main-about__title__text">
-          About <span>me</span>
-        </div>
-        <div className="main-about__title__underline"></div>
-      </h2>
+      {/* Title */}
+      <Title text="About" span="Me" />
 
       {/* Link Info component */}
       <Info />

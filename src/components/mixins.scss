@@ -15,6 +15,13 @@
   align-items: center;
 }
 
+@mixin flex ($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
 @mixin Grid {
   display: grid;
   grid-template-columns: repeat(1, 2fr);

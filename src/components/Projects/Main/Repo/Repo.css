@@ -1,0 +1,90 @@
+.repo {
+  width: 100%;
+  border-top: 1px solid #d8dee4;
+  padding: 1rem 0; }
+  .repo:last-child {
+    border-bottom: 1px solid #d8dee4; }
+  .repo__left__name {
+    font-family: "Montserrat Alternates";
+    text-decoration: none;
+    color: #C2E54F;
+    font-weight: 800;
+    font-size: 24px; }
+    .repo__left__name:hover {
+      text-decoration: underline; }
+  .repo__left__description {
+    font-family: "Montserrat Alternates";
+    color: #212529;
+    font-size: 17px; }
+  .repo__left__topics {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0; }
+    .repo__left__topics__topic {
+      font-family: "Montserrat Alternates";
+      font-size: 14px;
+      color: #0969da;
+      background-color: #ddf4ff;
+      padding: 5px 10px;
+      border-radius: 10px;
+      cursor: pointer; }
+      .repo__left__topics__topic:hover {
+        background-color: #0969da;
+        color: #fff; }
+  .repo__left__row__lang {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px; }
+    .repo__left__row__lang__color {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%; }
+    .repo__left__row__lang__name {
+      font-family: "Montserrat Alternates";
+      font-size: 18px;
+      color: #212529;
+      font-weight: 800; }
+    .repo__left__row__lang__stars {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      gap: 5px; }
+      .repo__left__row__lang__stars__count {
+        font-family: "Montserrat Alternates";
+        font-size: 18px;
+        color: #212529; }
+      .repo__left__row__lang__stars svg {
+        cursor: pointer; }
+        .repo__left__row__lang__stars svg:hover {
+          fill: #0969da; }
+  .repo__right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row; }
+    .repo__right__homepage {
+      background-color: #C2E54F;
+      color: #fff;
+      box-shadow: 0 0 5px #C2E54F;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-family: "Montserrat Alternates";
+      font-weight: 800;
+      transition: all .3s ease-in-out;
+      border: 1px solid #C2E54F; }
+      .repo__right__homepage:hover {
+        background-color: #fff;
+        color: #C2E54F; }
+  .repo__left, .repo__right {
+    width: 100%; }
+
+/*# sourceMappingURL=Repo.css.map */

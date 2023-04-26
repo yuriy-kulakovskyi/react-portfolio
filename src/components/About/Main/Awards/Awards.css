@@ -1,23 +1,6 @@
 .awards {
   width: 100%;
   padding: 2rem 0; }
-  .awards__title {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 5px; }
-    .awards__title__underline {
-      width: 100px;
-      height: 2px;
-      background-color: #C2E54F; }
-  .awards__title__row {
-    font-family: "Montserrat Alternates";
-    font-weight: 600; }
-    .awards__title__row span {
-      font-family: "Montserrat Alternates";
-      font-weight: 600;
-      color: #C2E54F;
-      text-shadow: 0 0 2px #C2E54F; }
   .awards__list {
     width: 100%;
     display: grid;
@@ -51,11 +34,17 @@
           font-size: 18px;
           color: #C2E54F;
           text-align: left; }
+          @media screen and (min-width: 991px) {
+            .awards__list__item__column__name {
+              font-size: 24px; } }
         .awards__list__item__column__description {
           font-family: "Montserrat Alternates";
           font-weight: 700;
           font-size: 14px;
           color: #212529; }
+          @media screen and (min-width: 991px) {
+            .awards__list__item__column__description {
+              font-size: 20px; } }
       .awards__list__item__img {
         min-width: 175px;
         height: 120px;

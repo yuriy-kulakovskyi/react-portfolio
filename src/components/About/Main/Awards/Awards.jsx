@@ -1,24 +1,14 @@
-import React, { useState } from 'react';
-import axios from 'axios';
+import React from 'react';
+import Title from '../../../Title/Title';
 import "./Awards.css";
+import certificates from "./certificates.json";
+
 
 const Awards = () => {
-  // certificates state
-  const [certificates, setCertificates] = useState([]);
-
-  // get them from https://portfolio-server-u50n.onrender.com/certificates by axios
-  axios.get("https://portfolio-server-u50n.onrender.com/certificates")
-    .then(res => setCertificates(res.data));
-
   return (
     <div className='awards'>
-      {/* h2 with className awards__title and text My <span>awards</span> */}
-      <h2 className="awards__title">
-        <div className="awards__title__row">
-          My <span>awards</span>
-        </div>
-        <div className="awards__title__underline"></div>
-      </h2>
+      {/* Title */}
+      <Title text="My" span="Awards" />
 
       {/* ul with className rewards__list */}
       <ul className="awards__list">

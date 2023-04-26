@@ -1,0 +1,18 @@
+@import "../../../variables.scss";
+
+.searchbar {
+  min-width: 300px;
+  margin-top: 20px;
+  padding: 15px 5px;
+  border-radius: 15px;
+  border: 2px solid $green;
+  box-shadow: $shadow;
+  font-family: "Montserrat Alternates";
+  font-size: 18px;
+  color: $black;
+  font-weight: 700;
+
+  &:focus {
+    outline: none;
+  }
+}

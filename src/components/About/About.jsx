@@ -18,18 +18,12 @@ const nav = [
 
   {
     "id": 2,
-    "content": "skills",
-    "active": "disactive"
-  },
-
-  {
-    "id": 3,
     "content": "projects",
     "active": "disactive"
   },
 
   {
-    "id": 4,
+    "id": 3,
     "content": "contact",
     "active": "disactive"
   },

@@ -1,0 +1,23 @@
+{
+  "colors": [
+    { "language": "JavaScript", "color": "#f1e05a" },
+    { "language": "HTML", "color": "#e34c26" },
+    { "language": "CSS", "color": "#563d7c" },
+    { "language": "SCSS", "color": "#c6538c" },
+    { "language": "Python", "color": "#3572A5" },
+    { "language": "Ruby", "color": "#701516" },
+    { "language": "Java", "color": "#b07219" },
+    { "language": "PHP", "color": "#4F5D95" },
+    { "language": "C#", "color": "#178600" },
+    { "language": "C++", "color": "#f34b7d" },
+    { "language": "TypeScript", "color": "#2b7489" },
+    { "language": "Shell", "color": "#89e051" },
+    { "language": "Swift", "color": "#ffac45" },
+    { "language": "Go", "color": "#00ADD8" },
+    { "language": "Kotlin", "color": "#F18E33" },
+    { "language": "Objective-C", "color": "#438eff" },
+    { "language": "Vue", "color": "#2c3e50" },
+    { "language": "Rust", "color": "#dea584" },
+    { "language": "Visual Basic", "color": "#945db7" }
+  ]
+}

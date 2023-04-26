@@ -5,30 +5,6 @@
   width: 100%;
   padding: 2rem 0;
 
-  &__title {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 5px;
-
-    &__underline {
-      width: 100px; height: 2px;
-      background-color: $green;
-    }
-  }
-
-  &__title__row {
-    font-family: "Montserrat Alternates";
-    font-weight: 600;
-
-    span {
-      font-family: "Montserrat Alternates";
-      font-weight: 600;
-      color: $green;
-      text-shadow: 0 0 2px $green;
-    }
-  }
-
   &__list {
     width: 100%;
     @include Grid();
@@ -62,6 +38,10 @@
           font-size: 18px;
           color: $green;
           text-align: left;
+
+          @media screen and (min-width: 991px) {
+            font-size: 24px;
+          }
         }
 
         &__description {
@@ -69,6 +49,10 @@
           font-weight: 700;
           font-size: 14px;
           color: $black;
+
+          @media screen and (min-width: 991px) {
+            font-size: 20px;
+          }
         }
       }
 

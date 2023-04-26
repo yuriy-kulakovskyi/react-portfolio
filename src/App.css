@@ -9,6 +9,9 @@
   background-color: #C2E54F;
   color: #fff; }
 
+section:not(.home) {
+  padding: 5rem 0 0 0; }
+
 .container {
   margin: 0 auto;
   padding: 1rem 2rem; }

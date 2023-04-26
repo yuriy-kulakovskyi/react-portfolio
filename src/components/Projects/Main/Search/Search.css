@@ -1,0 +1,15 @@
+.searchbar {
+  min-width: 300px;
+  margin-top: 20px;
+  padding: 15px 5px;
+  border-radius: 15px;
+  border: 2px solid #C2E54F;
+  box-shadow: 0 0 5px #C2E54F;
+  font-family: "Montserrat Alternates";
+  font-size: 18px;
+  color: #212529;
+  font-weight: 700; }
+  .searchbar:focus {
+    outline: none; }
+
+/*# sourceMappingURL=Search.css.map */
