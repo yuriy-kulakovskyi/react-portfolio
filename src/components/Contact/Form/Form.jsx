@@ -13,8 +13,8 @@ const Form = () => {
 
   const [submitted, setSubmitted] = useState(false);
 
-  const TOKEN = "6071848858:AAFuJp0SHK-IxB-72E4Ms0lTFIpFq4KngaA";
-  const CHAT_ID = "-1001510152418";
+  const TOKEN = process.env.TOKEN;
+  const CHAT_ID = process.env.CHAT_ID;
   const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
   const submit = function (e) {
