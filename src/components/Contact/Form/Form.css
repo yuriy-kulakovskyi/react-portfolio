@@ -1,0 +1,73 @@
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 1.5rem 0; }
+  .form__block {
+    width: 100%;
+    gap: 20px;
+    box-shadow: 0 0 5px #C2E54F;
+    padding: 1rem 1.5rem;
+    border-radius: 10px; }
+    .form__block svg {
+      width: 26px;
+      height: 30px; }
+      .form__block svg path {
+        fill: #C2E54F; }
+    .form__block input, .form__block textarea {
+      width: 100%;
+      max-height: 150px;
+      border: none;
+      resize: none;
+      font-family: "Montserrat Alternates";
+      font-size: 24px;
+      font-weight: 700; }
+      .form__block input:focus, .form__block textarea:focus {
+        outline: none; }
+  .form__block:nth-child(1) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row; }
+  .form__block:nth-child(2) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row; }
+  .form__button {
+    padding: 1rem 2rem;
+    border: none;
+    background-color: #C2E54F;
+    font-family: "Montserrat Alternates";
+    font-size: 24px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all .2s ease-in-out; }
+    .form__button:hover {
+      background-color: transparent;
+      color: #C2E54F;
+      box-shadow: 0 0 5px #C2E54F; }
+    @media screen and (min-width: 768px) {
+      .form__button {
+        width: 100%;
+        border-radius: 20px; } }
+  .form__success {
+    width: 100%;
+    box-shadow: 0 0 5px #C2E54F;
+    background-color: #d4edda;
+    padding: 1rem 0;
+    border-radius: 10px;
+    margin-top: 30px; }
+    .form__success__text {
+      color: #155724;
+      font-size: 17px;
+      font-family: "Montserrat Alternates";
+      font-weight: 700;
+      text-align: center; }
+
+/*# sourceMappingURL=Form.css.map */

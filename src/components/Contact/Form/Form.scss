@@ -1,0 +1,87 @@
+// import mixins and variables
+@import "../../mixins.scss";
+@import "../../variables.scss";
+
+.form {
+  width: 100%;
+  @include flex(center, center, column);
+  gap: 20px;
+  padding: 1.5rem 0;
+
+  &__block {
+    width: 100%;
+    gap: 20px;
+    box-shadow: $shadow;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+
+    svg {
+      width: 26px; height: 30px;
+
+      path {
+        fill: $green;
+      }
+    }
+
+    input, textarea {
+      width: 100%; max-height: 150px;
+      border: none; resize: none;
+      font-family: "Montserrat Alternates";
+      font-size: 24px;
+      font-weight: 700;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &__block:nth-child(1) {
+    @include flex(flex-start, center, row);
+  }
+
+  &__block:nth-child(2) {
+    @include flex(flex-start, flex-start, row);
+  }
+
+  &__button {
+    padding: 1rem 2rem;
+    border: none;
+    background-color: $green;
+    font-family: "Montserrat Alternates";
+    font-size: 24px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      background-color: transparent;
+      color: $green;
+      box-shadow: $shadow;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+
+  &__success {
+    width: 100%;
+    box-shadow: $shadow;
+    background-color: #d4edda;
+    padding: 1rem 0;
+    border-radius: 10px;
+    margin-top: 30px;
+
+    &__text {
+      color: #155724;
+      font-size: 17px;
+      font-family: "Montserrat Alternates";
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+}
