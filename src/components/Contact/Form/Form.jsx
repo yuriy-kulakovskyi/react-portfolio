@@ -18,11 +18,9 @@ const Form = () => {
   useEffect(() => {
     setTOKEN(process.env.TOKEN);
     setCHAT_ID(process.env.CHAT_ID);
-  }, []);
+  }, [process.env.TOKEN, process.env.CHAT_ID]);
 
   const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
-
-  console.log(process.env);
 
   const submit = function (e) {
     e.preventDefault();
