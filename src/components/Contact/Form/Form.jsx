@@ -24,23 +24,27 @@ const Form = () => {
     message += `<b>Name: </b> ${name.current.value} \n`;
     message += `<b>Message: </b> ${text.current.value} \n`;
 
-    axios.post(URI_API, {
-      chat_id: process.env.CHAT_ID,
-      parse_mode: "html",
-      text: message
-    })
-    .then((res) => {
-      name.current.value = '';
-      text.current.value = '';
-      setSubmitted(true);
-    })
-    .catch(err => {
-      setSubmitted(false);
-      throw err;
-    })
-    .finally(() => {
-      console.log("form submission");
-    })
+    {TOKEN ? 
+      axios.post(URI_API, {
+        chat_id: process.env.CHAT_ID,
+        parse_mode: "html",
+        text: message
+      })
+      .then((res) => {
+        name.current.value = '';
+        text.current.value = '';
+        setSubmitted(true);
+      })
+      .catch(err => {
+        setSubmitted(false);
+        throw err;
+      })
+      .finally(() => {
+        console.log("form submission");
+      })
+
+      : null
+    } 
   }
 
   return (
