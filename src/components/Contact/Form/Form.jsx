@@ -1,5 +1,5 @@
 // React and hooks
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 
 // Axios
 import axios from 'axios';
@@ -12,10 +12,17 @@ const Form = () => {
   const text = useRef(null);
 
   const [submitted, setSubmitted] = useState(false);
+  const [TOKEN, setTOKEN] = useState("");
+  const [CHAT_ID, setCHAT_ID] = useState("");
 
-  const TOKEN = process.env.TOKEN;
-  const CHAT_ID = process.env.CHAT_ID;
+  useEffect(() => {
+    setTOKEN(process.env.TOKEN);
+    setCHAT_ID(process.env.CHAT_ID);
+  }, []);
+
   const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+
+  console.log(process.env);
 
   const submit = function (e) {
     e.preventDefault();
