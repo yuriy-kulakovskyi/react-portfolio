@@ -1,5 +1,5 @@
 // React and hooks
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState } from 'react';
 
 // Axios
 import axios from 'axios';
@@ -13,38 +13,35 @@ const Form = () => {
 
   const [submitted, setSubmitted] = useState(false);
 
+  const TOKEN = process.env.REACT_APP_TOKEN;
+  const CHAT_ID = process.env.REACT_APP_CHAT_ID;
+  const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+
 
   const submit = function (e) {
-    const TOKEN = process.env.TOKEN;
-    const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
-   
     e.preventDefault();
 
     let message = `<b>Portfolio form submition </b> \n`;
     message += `<b>Name: </b> ${name.current.value} \n`;
     message += `<b>Message: </b> ${text.current.value} \n`;
 
-    {TOKEN ? 
-      axios.post(URI_API, {
-        chat_id: process.env.CHAT_ID,
-        parse_mode: "html",
-        text: message
-      })
-      .then((res) => {
-        name.current.value = '';
-        text.current.value = '';
-        setSubmitted(true);
-      })
-      .catch(err => {
-        setSubmitted(false);
-        throw err;
-      })
-      .finally(() => {
-        console.log("form submission");
-      })
-
-      : null
-    } 
+    axios.post(URI_API, {
+      chat_id: CHAT_ID,
+      parse_mode: "html",
+      text: message
+    })
+    .then((res) => {
+      name.current.value = '';
+      text.current.value = '';
+      setSubmitted(true);
+    })
+    .catch(err => {
+      setSubmitted(false);
+      throw err;
+    })
+    .finally(() => {
+      console.log("form submission");
+    })
   }
 
   return (
