@@ -12,17 +12,12 @@ const Form = () => {
   const text = useRef(null);
 
   const [submitted, setSubmitted] = useState(false);
-  const [TOKEN, setTOKEN] = useState("");
-  const [CHAT_ID, setCHAT_ID] = useState("");
 
-  useEffect(() => {
-    setTOKEN(process.env.TOKEN);
-    setCHAT_ID(process.env.CHAT_ID);
-  }, [process.env.TOKEN, process.env.CHAT_ID]);
-
-  const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
   const submit = function (e) {
+    const TOKEN = process.env.TOKEN;
+    const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+   
     e.preventDefault();
 
     let message = `<b>Portfolio form submition </b> \n`;
@@ -30,7 +25,7 @@ const Form = () => {
     message += `<b>Message: </b> ${text.current.value} \n`;
 
     axios.post(URI_API, {
-      chat_id: CHAT_ID,
+      chat_id: process.env.CHAT_ID,
       parse_mode: "html",
       text: message
     })
