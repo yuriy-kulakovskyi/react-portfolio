@@ -5,6 +5,10 @@ import "./Main.css";
 const Main = () => {
   return (
     <main className='main'>
+      <div className="main__img">
+        <img src={process.env.PUBLIC_URL + "/img/avatar.webp"} alt="Yurii Kulakovskyi" />
+      </div>
+
       <h2 className="main__title"><span>Yurii</span> Kulakovskyi</h2>
 
       <p className="main__subtitle">

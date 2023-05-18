@@ -1,5 +1,5 @@
-@import "../../variables.scss";
-@import "../../mixins.scss";
+@import "../variables.scss";
+@import "../mixins.scss";
 
 .footer {
   position: absolute;
@@ -7,10 +7,9 @@
   @include flex(center, center, row);
   gap: 50px;
   z-index: 1;
-  bottom: 10px;
+  bottom: 10px; right: 0;
 
   &__link {
-    color: #fff;
     transition: all .3s ease-in-out;
 
     svg {
@@ -19,7 +18,7 @@
     }
 
     &:hover {
-      color: $green;
+      color: $green!important;
     }
   }
 }

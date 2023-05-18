@@ -8,15 +8,15 @@
   flex-direction: row;
   gap: 50px;
   z-index: 1;
-  bottom: 10px; }
+  bottom: 10px;
+  right: 0; }
   .footer__link {
-    color: #fff;
     transition: all .3s ease-in-out; }
     .footer__link svg {
       width: 30px;
       height: 30px;
       stroke-width: 2px; }
     .footer__link:hover {
-      color: #C2E54F; }
+      color: #C2E54F !important; }
 
 /*# sourceMappingURL=Footer.css.map */

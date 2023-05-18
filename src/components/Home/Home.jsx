@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../Header/Header';
-import Footer from './Footer/Footer';
+import Footer from '../Footer/Footer';
+import Loader from '../Loader/Loader';
 import './Home.css';
 import Main from './Main/Main';
 import ParticlesComponent from '../../Particles/ParticlesComponent';
@@ -32,9 +33,22 @@ const nav = [
 ];
 
 const Home = () => {
+  useEffect(() => {
+    // alert("home");
+  }, []);
+
   return (
     // section with className home
     <section className="home">
+      {/* Loader */}
+      <Loader
+        firstT={500}
+        secondT={1000}
+        thirdT={1500}
+        fourthT={2000}
+        fullT={2500}
+      />
+
       {/* Particles */}
       <ParticlesComponent />
 
@@ -48,7 +62,9 @@ const Home = () => {
       </div>
 
       {/* Footer */}
-      <Footer />
+      <Footer 
+        color={"#fff"}
+      />
     </section>
   );
 }

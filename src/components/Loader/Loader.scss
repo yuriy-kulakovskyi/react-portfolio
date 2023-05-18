@@ -1,0 +1,43 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+.loader {
+  width: 100%; min-height: 100vh;
+  position: absolute;
+  z-index: 10;
+  background-color: #fff;
+  @include flex(center, flex-start, row);
+
+  &__border {
+    width: 200px; height: 200px;
+    border: 10px dotted rgb(220, 229, 239);
+    border-radius: 100%;
+    @include flex(center, center, row);
+    transition: all .3s ease-in-out;
+
+    &__circle {
+      width: 90%; height: 90%;
+      background-color: rgb(243, 244, 254);
+      border-radius: 100%;
+      @include flex(space-between, center, column);
+      padding: .5rem;
+      transition: all .3s ease-in-out;
+
+      &__top, &__bottom {
+        width: 100%;
+        @include flex(center, center, row);
+      }
+
+      &__middle {
+        width: 100%;
+        @include flex(space-between, center, row);
+      }
+
+      &__dot {
+        width: 20px; height: 20px;
+        border-radius: 100%;
+        background-color: rgb(220, 229, 239);
+      }
+    }
+  }
+}

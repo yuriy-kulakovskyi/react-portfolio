@@ -10,6 +10,12 @@ import Title from '../Title/Title';
 // Form Component
 import Form from './Form/Form';
 
+// Footer Component
+import Footer from '../Footer/Footer';
+
+// Loader component
+import Loader from "../Loader/Loader";
+
 // Contact styles
 import "./Contact.css";
 
@@ -43,6 +49,15 @@ const Contact = () => {
   return (
     // contact section
     <section className="contact">
+      {/* Loader component */}
+      <Loader
+        firstT={300}
+        secondT={600}
+        thirdT={900}
+        fourthT={1200}
+        fullT={1500}
+      />
+      
       {/* Header */}
       <Header nav={nav} />
 
@@ -56,6 +71,11 @@ const Contact = () => {
 
         {/* Form component */}
         <Form />
+
+        {/* Footer component */}
+        <Footer 
+          color={"#333"}
+        />
       </div>
     </section>
   );
