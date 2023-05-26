@@ -11,4 +11,4 @@
   <a href="https://uk.reactjs.org/">React.js</a> •
 </p>
 
-<img width="1680" alt="Screenshot 2023-01-12 at 22 32 25" src="/var/folders/dv/04v6jr1x0nl05d42j699k2bw0000gn/T/TemporaryItems/NSIRD_screencaptureui_XagmDG/Screenshot 2023-05-26 at 18.08.58.png">
+<img width="1680" alt="Screenshot" src="./screenshot.png">
