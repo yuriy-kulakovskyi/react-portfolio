@@ -53,5 +53,26 @@
     @media (min-width: 991px) {
       .main__subtitle {
         font-size: 40px; } }
+  .main__download {
+    padding: 1rem 2rem;
+    box-shadow: 0 0 5px #C2E54F;
+    border-radius: 10px;
+    background-color: #C2E54F;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Montserrat Alternates';
+    font-weight: 900;
+    font-size: 15px;
+    transition: all .3s ease-in-out; }
+    .main__download:hover {
+      background-color: transparent;
+      color: #C2E54F; }
+    @media screen and (min-width: 540px) {
+      .main__download {
+        font-size: 20px; } }
+    @media (min-width: 991px) {
+      .main__download {
+        font-size: 25px; } }
 
 /*# sourceMappingURL=Main.css.map */

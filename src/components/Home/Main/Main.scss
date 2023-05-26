@@ -70,4 +70,32 @@
       font-size: 40px;
     }
   }
+
+  // download button styles
+  &__download {
+    padding: 1rem 2rem;
+    box-shadow: $shadow;
+    border-radius: 10px;
+    background-color: $green;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Montserrat Alternates';
+    font-weight: 900;
+    font-size: 15px;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      background-color: transparent;
+      color: $green;
+    }
+
+    @media screen and (min-width: 540px) {
+      font-size: 20px;
+    }
+
+    @media (min-width: 991px) {
+      font-size: 25px;
+    }
+  }
 }

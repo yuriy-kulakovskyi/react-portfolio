@@ -23,6 +23,13 @@ const Main = () => {
         </Typed>
       </p>
       
+      <a 
+        href={process.env.PUBLIC_URL + "cv.pdf"} 
+        download={"cv.pdf"}
+        className="main__download"
+      >
+        Download CV
+      </a>
     </main>
   );
 }

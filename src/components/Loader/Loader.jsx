@@ -52,13 +52,13 @@ const Loader = ({firstT, secondT, thirdT, fourthT, fullT}) => {
   return (
     <section className='loader'>
       {/* Loader border */}
-      <div className="loader__border" style={{borderColor: loaded ? "#C2E54F" : "rgb(220, 229, 239)"}}>
+      <div className="loader__border" style={{borderColor: loaded ? "#90EE90" : "rgb(220, 229, 239)"}}>
         {/* circle */}
         <div className="loader__border__circle">
           <div className="loader__border__circle__top">
             <div 
               style={
-                {backgroundColor: first ? "#90EE90": "rgb(220, 229, 239)", boxShadow: first ? "0 0 5px #C2E54F" : "none"}
+                {backgroundColor: first ? "#00FF00": "rgb(220, 229, 239)", boxShadow: first ? "0 0 5px #C2E54F" : "none"}
               } 
               className="loader__border__circle__dot"></div>
           </div>
